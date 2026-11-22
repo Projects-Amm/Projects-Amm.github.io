@@ -2,17 +2,21 @@
 <title>Política de privacidad · Sleigh Drift: Derrape Navideño</title><link rel="stylesheet" href="../style.css"></head><body><main>
 <p class="muted"><a href="../">FixenAppsGames</a> · <a href="#english">English version below</a></p>
 <h1>Política de privacidad de Sleigh Drift: Derrape Navideño</h1>
-<p class="muted">Última actualización: 21 de noviembre de 2026 · Aplicación: <code>com.fixenapps.sleighdrift3d</code></p>
+<p class="muted">Última actualización: 22 de noviembre de 2026 · Aplicación: <code>com.fixenapps.sleighdrift3d</code></p>
 
 <p>Sleigh Drift: Derrape Navideño (“el juego”) es desarrollado por <strong>FixenAppsGames</strong> (“nosotros”). Esta política explica qué datos se tratan cuando usas el juego, para qué y qué opciones tienes.</p>
 
-<h2>1. Datos que se guardan solo en tu dispositivo</h2>
-<p>Tu progreso (récord, dulces, mejoras, personajes desbloqueados, ajustes de sonido, regalo diario) se guarda localmente en tu teléfono. No lo recibimos. Si desinstalas el juego o borras sus datos, se elimina.</p>
+<h2>1. Progreso del juego y guardado en la nube</h2>
+<p>Tu progreso se guarda en tu teléfono y, desde que eliges tu apodo, también en <strong>Google Firebase (Cloud Firestore)</strong>, para que no lo pierdas si actualizas o reinstalas el juego. La copia en la nube incluye: apodo, país, dulces, personajes desbloqueados y seleccionado, niveles de mejoras y récord. Los ajustes de sonido y el regalo diario se quedan solo en el teléfono.</p>
+<p>Para reconocer tu teléfono tras una reinstalación, el juego lee el identificador de Android de la app (<em>ANDROID_ID</em>, propio de esta app en tu dispositivo) y <strong>lo convierte en un código irreversible (hash SHA-256) en el propio teléfono</strong>. Solo ese código se envía; el identificador original nunca sale del dispositivo. No es el identificador de publicidad y no se usa para anuncios ni se comparte con terceros. Cambia si restableces el teléfono de fábrica.</p>
 
 <h2>2. Clasificación global (Firebase)</h2>
 <p>Para mostrar el ranking, el juego usa <strong>Google Firebase</strong> (Firebase Authentication anónima y Cloud Firestore). Se crea un identificador anónimo aleatorio para tu instalación; <strong>no pedimos nombre real, correo ni teléfono</strong>. En el ranking se guarda:</p>
-<ul><li>el apodo que tú eliges (máx. 16 caracteres; por defecto “PilotoXXXX”),</li><li>el país que eliges,</li><li>tu mejor puntuación y el emoji del personaje,</li><li>la fecha de la última actualización.</li></ul>
+<ul><li>el apodo que tú eliges al empezar a jugar (3 a 16 caracteres),</li><li>el país que eliges,</li><li>tu mejor puntuación y el emoji del personaje,</li><li>la fecha de la última actualización.</li></ul>
 <p>Este apodo, país y puntuación son <strong>visibles públicamente</strong> para otros jugadores. No uses tu nombre real ni datos personales como apodo. Las entradas inactivas se borran automáticamente a los 30 días.</p>
+
+<h2>2b. Amigos</h2>
+<p>Cada jugador tiene un <strong>código de amigo</strong> (derivado de su identificador público del ranking). Si agregas a alguien con su código, guardamos esa relación en Firebase (solo identificadores públicos del ranking, sin datos personales) para que ambos se vean en la pestaña <em>Amigos</em> y el juego pueda avisarte cuando un amigo supere tu récord. Puedes quitar amigos cuando quieras; al borrar tus datos también se borran tus relaciones de amistad.</p>
 
 <h2>3. Publicidad (Google AdMob)</h2>
 <p>El juego es gratuito y se financia con anuncios de <strong>Google AdMob</strong>: un banner en los menús, anuncios a pantalla completa ocasionales entre partidas y anuncios con recompensa <strong>opcionales</strong> (por ejemplo, para revivir o duplicar dulces). Google puede recopilar el <strong>identificador de publicidad</strong> del dispositivo, la dirección IP, datos del dispositivo e interacción con los anuncios para mostrar, medir y personalizar anuncios y prevenir fraude.</p>
@@ -22,26 +26,28 @@
 <h2>4. Resumen de datos</h2>
 <table><tr><th>Dato</th><th>Finalidad</th><th>¿Compartido?</th></tr>
 <tr><td>ID anónimo de Firebase, apodo, país, puntuación</td><td>Ranking</td><td>Visible para jugadores; tratado por Google Firebase</td></tr>
+<tr><td>Código irreversible derivado del ID de Android de la app; progreso (dulces, personajes, mejoras, récord)</td><td>Guardado en la nube y recuperación tras reinstalar</td><td>No es público; tratado por Google Firebase</td></tr>
 <tr><td>ID de publicidad, IP, info del dispositivo, interacción con anuncios</td><td>Publicidad, análisis de anuncios, prevención de fraude</td><td>Google AdMob y sus socios publicitarios</td></tr>
-<tr><td>Progreso del juego</td><td>Funcionamiento del juego</td><td>No, solo en el dispositivo</td></tr></table>
+<tr><td>Ajustes de sonido, regalo diario</td><td>Funcionamiento del juego</td><td>No, solo en el dispositivo</td></tr></table>
 <p>Los datos se transmiten cifrados (HTTPS). No vendemos datos personales. No recogemos ubicación precisa, contactos, fotos, micrófono ni cámara.</p>
 
 <h2>5. Niños</h2>
 <p>El juego no está dirigido a menores de 13 años y no recopilamos a sabiendas datos de menores de 13. Si crees que un menor nos ha proporcionado datos, escríbenos y los borraremos.</p>
 
 <h2>6. Tus derechos y eliminación de datos</h2>
-<p>Puedes borrar tu entrada del ranking desde el propio juego (<em>🏆 Clasificación → 🗑️ Borrar mis datos del ranking</em>) o escribiéndonos. Ver <a href="eliminar-datos.html">cómo eliminar tus datos</a>. Según tu país, puedes tener derecho a acceder, rectificar, oponerte o solicitar la eliminación de tus datos.</p>
+<p>Puedes borrar todos tus datos en la nube (entrada del ranking y guardado en la nube) desde el propio juego (<em>🏆 Clasificación → 🗑️ Borrar mis datos del ranking</em>) o escribiéndonos. Ver <a href="eliminar-datos.html">cómo eliminar tus datos</a>. Según tu país, puedes tener derecho a acceder, rectificar, oponerte o solicitar la eliminación de tus datos.</p>
 
 <h2>7. Cambios y contacto</h2>
 <p>Si cambiamos esta política, actualizaremos la fecha de arriba. Contacto: <a href="mailto:lofidevs222@gmail.com">lofidevs222@gmail.com</a></p>
 
 <hr id="english">
 <h1>Privacy Policy — Sleigh Drift: Derrape Navideño</h1>
-<p class="muted">Last updated: November 21, 2026 · Developer: FixenAppsGames</p>
-<p><strong>On-device data:</strong> game progress (high score, candies, upgrades, unlocked characters, settings) stays on your device.</p>
+<p class="muted">Last updated: November 22, 2026 · Developer: FixenAppsGames</p>
+<p><strong>Progress & cloud save:</strong> progress is stored on your phone and, once you choose a nickname, also in Google Firebase (Cloud Firestore) so it survives updates and reinstalls: nickname, country, candies, unlocked/selected characters, upgrade levels and high score. To recognise your phone after a reinstall, the game reads the app-scoped Android ID (ANDROID_ID) and turns it into an irreversible SHA-256 hash on the device; only the hash is sent. It is not the advertising ID, is not used for ads and is not shared with third parties. Sound settings and the daily gift stay on the device.</p>
 <p><strong>Leaderboard (Google Firebase):</strong> an anonymous random ID is created via Firebase Anonymous Authentication. We store your chosen nickname (max 16 chars), chosen country, best score, character emoji and last-update time in Cloud Firestore. Nickname, country and score are publicly visible to other players. Inactive entries are deleted after 30 days. We never ask for your real name, email or phone number.</p>
+<p><strong>Friends:</strong> every player has a friend code (derived from their public leaderboard id). Adding a friend stores that link in Firebase (public leaderboard ids only) so both players see each other in the Friends tab and get an alert when a friend beats their score. You can remove friends at any time; deleting your data also deletes your friend links.</p>
 <p><strong>Advertising (Google AdMob):</strong> the game shows a banner on menus, occasional interstitials between runs and optional rewarded ads. Google may collect the advertising ID, IP address, device information and ad interactions to serve, measure and personalise ads and to prevent fraud. Where required (EEA, UK, Switzerland, etc.) a consent form (Google UMP) is shown before ads load; you can change your choice in <em>Leaderboard → Ad options</em>. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a>.</p>
 <p><strong>Children:</strong> the game is not directed at children under 13 and we do not knowingly collect their data.</p>
-<p><strong>Deletion:</strong> delete your leaderboard entry in-game (<em>Leaderboard → Delete my leaderboard data</em>) or contact us. See <a href="eliminar-datos.html">data deletion</a>. Data is encrypted in transit and never sold.</p>
+<p><strong>Deletion:</strong> delete your leaderboard entry and cloud save in-game (<em>Leaderboard → Delete my leaderboard data</em>) or contact us. See <a href="eliminar-datos.html">data deletion</a>. Data is encrypted in transit and never sold.</p>
 <p><strong>Contact:</strong> <a href="mailto:lofidevs222@gmail.com">lofidevs222@gmail.com</a></p>
 </main></body></html>
